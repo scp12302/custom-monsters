@@ -2197,6 +2197,729 @@
      ]
     }
    ]
+  },
+  {
+   "name": "小夜",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "construct",
+   "alignment": [
+    "绝对中立"
+   ],
+   "ac": [
+    9
+   ],
+   "hp": {
+    "average": 93,
+    "formula": "11d8 + 44"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 19,
+   "dex": 9,
+   "con": 18,
+   "int": 6,
+   "wis": 10,
+   "cha": 5,
+   "immune": [
+    "lightning",
+    "poison",
+    {
+     "immune": [
+      "bludgeoning",
+      "piercing",
+      "slashing"
+     ],
+     "note": "（来自非魔法攻击且非精金武器）"
+    }
+   ],
+   "conditionImmune": [
+    "charmed",
+    "exhaustion",
+    "frightened",
+    "paralyzed",
+    "petrified",
+    "poisoned"
+   ],
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 10,
+   "languages": [
+    "理解其制作者的语言但不会说"
+   ],
+   "cr": "5",
+   "trait": [
+    {
+     "name": "狂怒 Berserk",
+     "ENG_name": "Berserk",
+     "entries": [
+      "魔像以40或更低生命值开始其自己回合时骰一次{@dice 1d6}，骰值为6时，魔像开始狂怒。魔像将在狂怒持续时每个自己回合里攻击距离它最近且它能看见的生物。如果在其移动并攻击的范围内没有符合条件的生物，则该魔像将攻击一个物件，并且会优先选择比自己体型尺寸更小的物件。魔像一旦开始狂怒，便会一直持续到被破坏或回复所有生命值为止。",
+      "若狂怒魔像的制作者在其身边60尺范围内，则可以尝试以坚定的说服性话语使其冷静下来。该魔像必须可以听到其制作者的话，而制作者必须执行一个动作来进行一次{@dc 15}的魅力（游说）检定。如果检定成功，则该魔像停止狂怒。如果它再以40或更低生命值受伤害，则该魔像可能再次开始狂怒。"
+     ]
+    },
+    {
+     "name": "厌恶火焰 Aversion of Fire",
+     "ENG_name": "Aversion of Fire",
+     "entries": [
+      "受火焰伤害后，魔像直至自己的下一回合结束前，其进行的攻击检定和属性检定都具有劣势。"
+     ]
+    },
+    {
+     "name": "不变外形 Immutable Form",
+     "ENG_name": "Immutable Form",
+     "entries": [
+      "魔像免疫任何可以改变其形态的法术或效应。"
+     ]
+    },
+    {
+     "name": "闪电吸收 Lightning Absorption",
+     "ENG_name": "Lightning Absorption",
+     "entries": [
+      "魔像受闪电伤害时不会损伤，反而会恢复与伤害值相等的生命值。"
+     ]
+    },
+    {
+     "name": "魔法抗性 Magic Resistance",
+     "ENG_name": "Magic Resistance",
+     "entries": [
+      "魔像抵抗法术和其他魔法效应时进行的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "魔化武器 Magic Weapon",
+     "ENG_name": "Magic Weapon",
+     "entries": [
+      "魔像的武器攻击视为魔法攻击。"
+     ]
+    },
+    {
+     "name": "扮演小夜 Playing Xiaoye",
+     "ENG_name": "Playing Xiaoye",
+     "entries": [
+      "小夜是一体身穿黑白制服、拥有宝石般异色瞳的魔像女仆。小夜的思维模式简单而直接，她喜爱自己的主人程达，以遵守他的命令为乐趣。她只会使用简单的词语，尽管她其实可以理解大部分日常对话。在需要完成某一项工作时，她倾向于最简洁有效的方式，而丝毫不顾及造成的影响。她的四肢和躯干上都有明显的拼合与缝补痕迹，所以她很少会脱下女仆装。除此之外，小夜还喜欢烹饪和泡茶，但味道极为感人，程达禁止了前者、只允许她泡茶。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "魔像发动两次猛击攻击。"
+     ]
+    },
+    {
+     "name": "猛击 Slam",
+     "ENG_name": "Slam",
+     "entries": [
+      "{@atkr m} {@hit 7}，触及5尺，单一目标。{@h}伤害：{@damage 2d8+4}（平均13）钝击伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "程达",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "人类"
+    ]
+   },
+   "alignment": [
+    "中立善良"
+   ],
+   "ac": [
+    {
+     "ac": 14,
+     "from": [
+      "镶嵌皮甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 15,
+    "formula": "2d8 + 2"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 11,
+   "dex": 14,
+   "con": 12,
+   "int": 10,
+   "wis": 13,
+   "cha": 14,
+   "save": {
+    "dex": "+4",
+    "wis": "+3"
+   },
+   "skill": {
+    "acrobatics": "+4",
+    "perception": "+5",
+    "performance": "+6"
+   },
+   "passive": 15,
+   "languages": [
+    "通用语",
+    "精灵语"
+   ],
+   "cr": "1/8",
+   "trait": [
+    {
+     "name": "嘲讽 Taunt（2次/天）",
+     "ENG_name": "Taunt",
+     "entries": [
+      "程达可以在自己的回合中以一个附赠动作指定30尺内的一个生物。如果目标能听到程达的声音，则该目标须成功于{@dc 12}的魅力豁免，否则该目标在技能检定、攻击骰和豁免骰上获得劣势，直到程达的下回合开始。"
+     ]
+    },
+    {
+     "name": "扮演程达 Playing Chengda",
+     "ENG_name": "Playing Chengda",
+     "entries": [
+      "程达是一名大约30岁，两鬓略微斑白的男人。他热爱收藏稀有的魔法物品和历史文物，也喜欢向别人介绍这些藏品背后的故事。虽然很少离开住处，但他很关心北境乃至整个大陆发生的事情。程达非常富有正义感和过剩的冒险精神，这使得他可能会头脑发热的做出一些冲动之举。数年前，一起针对他策划的刺杀事件对他造成了深刻的心理阴影，令他开始注重宅邸的安全措施。这场阴谋最终被偶然卷入的冒险者阻止，其中女法师天晴与程达还因此成为了密友。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "程达是一名1级施法者，其施法能力基于魅力（法术豁免{@dc 12}，法术攻击{@hit 4}）。程达拥有以下诗人法术的施法能力："
+     ],
+     "spells": {
+      "0": {
+       "spells": [
+        "{@spell 交友术}",
+        "{@spell 法师之手}",
+        "{@spell 恶毒嘲笑}"
+       ]
+      },
+      "1": {
+       "slots": 2,
+       "spells": [
+        "{@spell 治疗伤口}",
+        "{@spell 纠缠术}",
+        "{@spell 妖火}",
+        "{@spell 动物交谈}"
+       ]
+      }
+     },
+     "ability": "cha"
+    }
+   ],
+   "action": [
+    {
+     "name": "短剑 Shortsword",
+     "ENG_name": "Shortsword",
+     "entries": [
+      "{@atkr m} {@hit 4}，触及5尺，单一目标。{@h}伤害：{@damage 1d6+2}（平均5）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "短弓 Shortbow",
+     "ENG_name": "Shortbow",
+     "entries": [
+      "{@atkr r} {@hit 4}，射程80/320尺，单一目标。{@h}伤害：{@damage 1d6+2}（平均5）穿刺伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "芙拉娜（罗嘉·考特曼）",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "幻身灵"
+    ]
+   },
+   "alignment": [
+    "混乱善良"
+   ],
+   "ac": [
+    {
+     "ac": 16,
+     "from": [
+      "镶嵌皮甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 19,
+    "formula": "3d8 + 6"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 11,
+   "dex": 18,
+   "con": 14,
+   "int": 11,
+   "wis": 12,
+   "cha": 16,
+   "skill": {
+    "deception": "+8",
+    "insight": "+3"
+   },
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 11,
+   "languages": [
+    "通用语"
+   ],
+   "cr": "1/2",
+   "trait": [
+    {
+     "name": "易形者 Shapechanger",
+     "ENG_name": "Shapechanger",
+     "entries": [
+      "幻身灵可以用一个动作，变成一个它曾见过的小型或中型类人生物，或变回原本形貌。除了体型，它的游戏数据不变。它穿着或持有的任何装备保持原形。如果幻身灵死亡，它恢复原本形貌。"
+     ]
+    },
+    {
+     "name": "扮演罗嘉 Playing Lorga",
+     "ENG_name": "Playing Lorga",
+     "entries": [
+      "罗嘉是一名有着火红色长发的幻身灵少女。她天性善良而软弱，非常重视弟弟班斯。她从小在程达资助的孤儿院长大，对程达抱有感激之情。但为了解救弟弟，她不得不为邪恶者提供服务，这使得她的内心十分痛苦。如非必要，她喜欢聆听胜过讲话，作为罗嘉发言时语气轻柔平淡，而扮演他人时则会表现得非常感性，用伪装出的情绪掩盖谎言。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "短剑 Shortsword",
+     "ENG_name": "Shortsword",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺，单个目标。{@h}伤害：{@damage 1d6+4}（平均7）穿刺伤害。"
+     ]
+    },
+    {
+     "name": "读取思想 Read Thoughts",
+     "ENG_name": "Read Thoughts",
+     "entries": [
+      "幻身灵魔法性地读取60尺内一个生物的表层思想。该效果可穿透障碍物，但是3尺木头或泥土，2尺岩石，2寸金属，或一薄层铅板可以阻挡该效果。当目标在距离内，幻身灵只要保持专注就可以持续阅读思想，如同专注一个法术。读取目标的思想时，幻身灵对该目标的感知（洞察）和魅力（欺瞒、威吓，游说）检定有优势。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "安小姐",
+   "ENG_name": "Miss Ann",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "L"
+   ],
+   "type": "ooze",
+   "alignment": [
+    "绝对中立"
+   ],
+   "ac": [
+    7
+   ],
+   "hp": {
+    "average": 85,
+    "formula": "10d10 + 30"
+   },
+   "speed": {
+    "walk": 20,
+    "climb": 20
+   },
+   "str": 16,
+   "dex": 5,
+   "con": 16,
+   "int": 7,
+   "wis": 10,
+   "cha": 9,
+   "immune": [
+    "acid",
+    "cold",
+    "lightning",
+    "slashing"
+   ],
+   "conditionImmune": [
+    "blinded",
+    "charmed",
+    "deafened",
+    "exhaustion",
+    "frightened",
+    "prone"
+   ],
+   "senses": [
+    "盲视60尺（此范围外则视为目盲）"
+   ],
+   "passive": 8,
+   "languages": [
+    "心灵感应60尺"
+   ],
+   "cr": "4",
+   "trait": [
+    {
+     "name": "不定型体 Amorphous",
+     "ENG_name": "Amorphous",
+     "entries": [
+      "黑布丁能够穿过最窄1英尺宽的空间而不用挤入。"
+     ]
+    },
+    {
+     "name": "腐蚀形态 Corrosive Form",
+     "ENG_name": "Corrosive Form",
+     "entries": [
+      "接触到或者用近战武器攻击到黑布丁，且身处其5尺范围内的生物收到{@damage 1d8}（平均4）点强酸伤害。所有金属或者木制的非魔法武器攻击到布丁怪后将被腐蚀。造成伤害后，武器的伤害骰将受到永久且叠加的-1罚值。如果罚值总和达到-5，该武器被摧毁。非魔法的弹药在击中黑布丁并造成伤害后被摧毁。"
+     ]
+    },
+    {
+     "name": "蛛行 Spider Climb",
+     "ENG_name": "Spider Climb",
+     "entries": [
+      "黑布丁不需要进行能力检定就能攀爬复杂表面，包括倒置在顶棚上时。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "伪足 Pseudopod",
+     "ENG_name": "Pseudopod",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺，单一目标。{@h}伤害：{@damage 1d6+4}（平均7）钝击伤害，外加{@damage 4d8}（平均18）强酸伤害。除此之外，目标穿着的非魔法盔甲被部分溶解，其提供的AC遭受永久且叠加的-1罚值。AC降至10的盔甲被摧毁。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "分裂 Split",
+     "ENG_name": "Split",
+     "entries": [
+      "当一只中型或者更大的黑布丁受到闪电或者挥砍伤害，并且此时它拥有至少10点hp时，他将分裂成两个新的黑布丁。每一只新的黑布丁拥有原本一半的hp，向下取整。新的黑布丁比原来的体型小一级。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "空壳僵尸",
+   "ENG_name": "Husk Zombie",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "undead",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    {
+     "ac": 10,
+     "from": [
+      "天生护甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 37,
+    "formula": "9d8 + 15"
+   },
+   "speed": {
+    "walk": 35
+   },
+   "str": 16,
+   "dex": 10,
+   "con": 16,
+   "int": 3,
+   "wis": 6,
+   "cha": 5,
+   "save": {
+    "con": "+5",
+    "wis": "+0"
+   },
+   "immune": [
+    "poison"
+   ],
+   "conditionImmune": [
+    "poisoned"
+   ],
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 8,
+   "languages": [
+    "懂得生前语言但不会说"
+   ],
+   "cr": "1",
+   "trait": [
+    {
+     "name": "血腥狂怒 Blood Frenzy",
+     "ENG_name": "Blood Frenzy",
+     "entries": [
+      "僵尸对HP没有全满的生物进行近战攻击时，攻击骰具有优势。"
+     ]
+    },
+    {
+     "name": "不死坚韧 Undead Fortitude",
+     "ENG_name": "Undead Fortitude",
+     "entries": [
+      "如果一次攻击将僵尸的HP削减到0，那么僵尸应当进行一次DC=5+伤害数值的体质检定，除非那次伤害是光耀伤害或者重击伤害。一旦成功，僵尸的HP将会降到1点。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "空壳僵尸进行两次爪击，当这次攻击将一个生物的生命值降至0时，空壳僵尸可以额外进行一次爪击。"
+     ]
+    },
+    {
+     "name": "爪击 Claw",
+     "ENG_name": "Claw",
+     "entries": [
+      "{@atkr m} {@hit 5}，触及5尺，单一生物。{@h}伤害：{@damage 1d6+3}（平均6）挥砍伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "瘟疫巨鼠",
+   "ENG_name": "Plague Rat",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "S"
+   ],
+   "type": "beast",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    14
+   ],
+   "hp": {
+    "average": 32,
+    "formula": "5d6 + 15"
+   },
+   "speed": {
+    "walk": 30,
+    "climb": 30
+   },
+   "str": 7,
+   "dex": 18,
+   "con": 16,
+   "int": 2,
+   "wis": 12,
+   "cha": 4,
+   "save": {
+    "dex": "+6",
+    "con": "+5"
+   },
+   "skill": {
+    "perception": "+3",
+    "stealth": "+6"
+   },
+   "resist": [
+    "necrotic"
+   ],
+   "immune": [
+    "poison"
+   ],
+   "conditionImmune": [
+    "poisoned",
+    "frightened"
+   ],
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 13,
+   "languages": [
+    "—"
+   ],
+   "cr": "2",
+   "trait": [
+    {
+     "name": "集群战术 Pack Tactics",
+     "ENG_name": "Pack Tactics",
+     "entries": [
+      "若巨鼠的攻击目标生物5尺内存在有至少一名巨鼠未失能的盟友，则巨鼠对该生物进行的攻击检定具有优势。"
+     ]
+    },
+    {
+     "name": "瘟疫携带者 Plague Carrier",
+     "ENG_name": "Plague Carrier",
+     "entries": [
+      "任何被瘟疫巨鼠的啃咬攻击命中的生物，必须通过一次{@dc 13}的体质豁免，否则感染死灵瘟疫。感染期间，目标每完成一次长休时，必须再进行一次{@dc 13}的体质豁免，失败则其生命值上限减少{@damage 1d10}（平均5），且该减损无法恢复，直至瘟疫被治愈（次等复原术或更高环位的法术可治愈）。若该效应将目标的生命值上限降至0，则目标死亡。"
+     ]
+    },
+    {
+     "name": "狂躁 Frenzy",
+     "ENG_name": "Frenzy",
+     "entries": [
+      "当瘟疫巨鼠的生命值降至一半以下时，它的攻击检定获得优势，且它的啃咬攻击额外造成{@damage 1d6}（平均3）的黯蚀伤害。此外，它不再进行撤退或躲藏，而是疯狂地朝最近的活物扑去。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "瘟疫巨鼠发动两次啃咬攻击。"
+     ]
+    },
+    {
+     "name": "啃咬 Bite",
+     "ENG_name": "Bite",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及5尺，单一目标。{@h}伤害：{@damage 1d6+4}（平均7）穿刺伤害，外加{@damage 1d6}（平均3）黯蚀伤害。若目标为被擒抱或中毒状态，则额外造成{@damage 1d6}（平均3）黯蚀伤害。"
+     ]
+    },
+    {
+     "name": "腐臭喷溅 Fetid Spray（充能5-6）",
+     "ENG_name": "Fetid Spray",
+     "entries": [
+      "瘟疫巨鼠向10尺锥形范围喷出腐臭的体液。范围内每个生物必须通过一次{@dc 13}的体质豁免，失败者受到{@damage 3d6}（平均10）毒素伤害，并陷入{@condition 中毒}状态1分钟。中毒期间，目标的速度减半。"
+     ]
+    }
+   ],
+   "bonus": [
+    {
+     "name": "疫病啃噬 Plague Gnaw",
+     "ENG_name": "Plague Gnaw",
+     "entries": [
+      "瘟疫巨鼠对一个已被其感染瘟疫的生物发动一次啃咬攻击，若命中，则该生物必须立即进行一次对抗瘟疫的体质豁免（{@dc 13}），失败则其生命值上限再减少{@damage 1d10}（平均5）。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "垂死痉挛 Death Throes",
+     "ENG_name": "Death Throes",
+     "entries": [
+      "当瘟疫巨鼠的生命值降至0时，它的身体爆开，腐臭的体液向5尺半径内飞溅。范围内每个生物必须通过一次{@dc 13}的体质豁免，失败者感染死灵瘟疫。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "瘟疫鼠群",
+   "ENG_name": "Plague Rat Swarm",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "beast",
+    "tags": [
+     "集群"
+    ]
+   },
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    14
+   ],
+   "hp": {
+    "average": 65,
+    "formula": "10d8 + 20"
+   },
+   "speed": {
+    "walk": 30,
+    "climb": 30
+   },
+   "str": 7,
+   "dex": 18,
+   "con": 14,
+   "int": 2,
+   "wis": 12,
+   "cha": 4,
+   "save": {
+    "dex": "+6",
+    "con": "+4"
+   },
+   "resist": [
+    "necrotic"
+   ],
+   "immune": [
+    "poison"
+   ],
+   "conditionImmune": [
+    "poisoned",
+    "frightened",
+    "charmed",
+    "paralyzed",
+    "prone",
+    "restrained",
+    "stunned"
+   ],
+   "senses": [
+    "黑暗视觉60尺"
+   ],
+   "passive": 13,
+   "languages": [
+    "—"
+   ],
+   "cr": "3",
+   "trait": [
+    {
+     "name": "集群 Swarm",
+     "ENG_name": "Swarm",
+     "entries": [
+      "群团可以占据另一个生物的空间，反之亦然，且可以穿过任何足够让小型巨鼠通过的开口。群团无法恢复生命值。"
+     ]
+    },
+    {
+     "name": "瘟疫携带者 Plague Carrier",
+     "ENG_name": "Plague Carrier",
+     "entries": [
+      "任何在群团空间内开始其回合的生物，必须通过一次{@dc 14}的体质豁免，否则感染死灵瘟疫（效果同上，DC 14）。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "群咬 Swarm Bite",
+     "ENG_name": "Swarm Bite",
+     "entries": [
+      "{@atkr m} {@hit 6}，触及0尺，处于群团空间内的一个目标。{@h}伤害：{@damage 3d6}（平均10）穿刺伤害，外加{@damage 2d6}（平均7）黯蚀伤害。若群团生命值过半，则伤害减半。"
+     ]
+    },
+    {
+     "name": "腐臭喷溅 Fetid Spray（充能5-6）",
+     "ENG_name": "Fetid Spray",
+     "entries": [
+      "群团向15尺锥形范围喷出腐臭体液。范围内每个生物进行{@dc 14}体质豁免，失败受{@damage 4d6}（平均14）毒素伤害并{@condition 中毒}1分钟（速度减半）。"
+     ]
+    }
+   ],
+   "reaction": [
+    {
+     "name": "分裂 Split",
+     "ENG_name": "Split",
+     "entries": [
+      "当群团受到闪电或挥砍伤害且生命值不低于10时，它分裂成两个较小的群团，各自拥有原群团一半的生命值。分裂后两个群团的CR降为2（450 XP）。"
+     ]
+    }
+   ]
   }
  ]
 }

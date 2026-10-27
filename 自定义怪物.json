@@ -2920,6 +2920,221 @@
      ]
     }
    ]
+  },
+  {
+   "name": "幽影·西格妮菲肯特",
+   "ENG_name": "Shadow of Siglofia",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "L"
+   ],
+   "type": "undead",
+   "alignment": [
+    "中立邪恶"
+   ],
+   "ac": [
+    {
+     "ac": 19,
+     "from": [
+      "堕落灵光"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 187,
+    "formula": "15d10 + 105"
+   },
+   "speed": {
+    "walk": 40,
+    "fly": 90,
+    "hover": true
+   },
+   "str": 20,
+   "dex": 18,
+   "con": 22,
+   "int": 20,
+   "wis": 22,
+   "cha": 24,
+   "save": {
+    "str": "+9",
+    "con": "+10",
+    "wis": "+10",
+    "cha": "+11"
+   },
+   "skill": {
+    "perception": "+14",
+    "insight": "+10",
+    "intimidation": "+11",
+    "deception": "+11"
+   },
+   "resist": [
+    "cold",
+    "radiant",
+    {
+     "resist": [
+      "bludgeoning",
+      "piercing",
+      "slashing"
+     ],
+     "note": "（来自非魔法攻击）"
+    }
+   ],
+   "immune": [
+    "poison",
+    "necrotic"
+   ],
+   "conditionImmune": [
+    "charmed",
+    "exhaustion",
+    "frightened",
+    "poisoned"
+   ],
+   "senses": [
+    "真实视觉90尺"
+   ],
+   "passive": 24,
+   "languages": [
+    "全部",
+    "心灵感应90尺"
+   ],
+   "cr": "12",
+   "trait": [
+    {
+     "name": "神性警觉 Divine Awareness",
+     "ENG_name": "Divine Awareness",
+     "entries": [
+      "幽影可以辨别听见的谎言。"
+     ]
+    },
+    {
+     "name": "残影复苏 Shadow Restoration",
+     "ENG_name": "Shadow Restoration",
+     "entries": [
+      "若幽影于水晶洞穴之外死去，她的身体会化为黑雾消失，并在{@dice 1d4}天后于水晶洞穴中获得一具新的残影躯体，以满生命值复活。除非她的本体（西格洛菲亚）被永久消灭，或水晶洞穴被彻底摧毁，否则她无法被永久杀死。"
+     ]
+    },
+    {
+     "name": "传奇抗性 Legendary Resistance（3/日）",
+     "ENG_name": "Legendary Resistance",
+     "entries": [
+      "幽影豁免失败时，可以将其改为豁免成功。"
+     ]
+    },
+    {
+     "name": "魔法抗性 Magic Resistance",
+     "ENG_name": "Magic Resistance",
+     "entries": [
+      "幽影对抗法术和其他魔法效应时进行的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "被弃之欲 Forsaken Desire",
+     "ENG_name": "Forsaken Desire",
+     "entries": [
+      "幽影源自于西格洛菲亚的欲望、执念与情绪。任何在幽影10尺内开始其回合的生物，必须通过一次{@dc 19}的感知豁免，否则陷入欲望侵蚀状态直至其下回合结束。处于该状态的生物攻击检定具有劣势，且无法对幽影发动借机攻击。幽影可指定至多三个生物不受此特性影响。"
+     ]
+    },
+    {
+     "name": "水晶残响 Crystal Echo",
+     "ENG_name": "Crystal Echo",
+     "entries": [
+      "幽影与水晶洞穴中的巨大水晶存在共鸣。当幽影位于水晶洞穴内时，她每回合恢复15点生命值，且她的传奇抗性增加1次/日。"
+     ]
+    }
+   ],
+   "action": [
+    {
+     "name": "多重攻击 Multiattack",
+     "ENG_name": "Multiattack",
+     "entries": [
+      "幽影发动两次残影之刃攻击。她可以将其中一次攻击替换为使用暗影神弓或施放一道法术。"
+     ]
+    },
+    {
+     "name": "残影之刃 Shadow Blade",
+     "ENG_name": "Shadow Blade",
+     "entries": [
+      "{@atkr m,r} {@hit 11}，触及10尺或射程90尺，单一目标。{@h}伤害：{@damage 4d6+5}（平均18）挥砍伤害，外加{@damage 4d8+4}（平均22）黯蚀伤害。",
+      "命中或失手：残影之刃会在被用于一次远程攻击后立即魔法性地回到幽影手中或悬浮在其5尺内。"
+     ]
+    },
+    {
+     "name": "暗影神弓 Shadow Bow",
+     "ENG_name": "Shadow Bow",
+     "entries": [
+      "感知豁免检定：{@dc 19}，单一300尺内幽影可见的生物。失败：若该生物的生命值为60或更低，则其陷入灵魂剥离状态1分钟（目标陷入{@condition 麻痹}状态，且在其每个回合开始时受到{@damage 3d6}（平均10）的黯蚀伤害）；否则，该生物受到{@damage 4d8}（平均18）穿刺伤害外加{@damage 4d8+4}（平均22）黯蚀伤害。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "幽影施展以下一道法术，无需材料成分并使用魅力作为施法属性（法术豁免{@dc 19}）："
+     ],
+     "will": [
+      "{@spell 侦测善恶}",
+      "{@spell 黑暗术}",
+      "{@spell 汲血之触}"
+     ],
+     "daily": {
+      "1e": [
+       "{@spell 通神术}",
+       "{@spell 操控天气}",
+       "{@spell 驱逐善恶}",
+       "{@spell 唤起亡灵}",
+       "{@spell 死亡一指}"
+      ]
+     },
+     "ability": "cha"
+    }
+   ],
+   "bonus": [
+    {
+     "name": "至暗援护 Dark Aid（3/日）",
+     "ENG_name": "Dark Aid",
+     "entries": [
+      "幽影施展{@spell 疗伤术}（三环版本，治疗{@dice 3d8+7}）、{@spell 次等复原术}或{@spell 移除诅咒}，使用与施法动作相同的施法属性。她也可以选择对30尺内一个不死生物恢复20点生命值。"
+     ]
+    }
+   ],
+   "legendaryHeader": [
+    "幽影可以在另一生物的回合后立即消耗一次传奇动作来执行以下一道动作。幽影在其回合开始时回复所有已消耗的传奇动作次数。"
+   ],
+   "legendaryActions": 3,
+   "legendary": [
+    {
+     "name": "致盲凝视 Blinding Gaze",
+     "ENG_name": "Blinding Gaze",
+     "entries": [
+      "体质豁免检定：{@dc 19}，单一90尺内幽影可见的生物。失败：目标陷入{@condition 目盲}状态，持续1分钟。失败或成功：幽影直至其下个回合开始都无法再执行此动作。"
+     ]
+    },
+    {
+     "name": "暗影传送 Shadow Teleport",
+     "ENG_name": "Shadow Teleport",
+     "entries": [
+      "幽影传送至多60尺至一处其可见的未占据空间。感知豁免检定：{@dc 19}，源自幽影目标空间10尺光环区域内的每名生物。失败：{@damage 2d10}（平均11）黯蚀伤害，且目标陷入{@condition 恐慌}状态直至其下回合结束。成功：半伤且不恐慌。"
+     ]
+    },
+    {
+     "name": "欲望低语 Whisper of Desire（2动作）",
+     "ENG_name": "Whisper of Desire",
+     "entries": [
+      "幽影对60尺内一个她能看见的生物低语，目标必须通过一次{@dc 19}的感知豁免，失败则陷入欲望侵蚀状态1分钟，且在其每个回合开始时必须使用其反应向幽影移动最多等于其速度的距离。被影响的生物可在其每个回合结束时重复豁免，成功则结束效果。"
+     ]
+    },
+    {
+     "name": "废弃圣光 Forsaken Radiance（3动作）",
+     "ENG_name": "Forsaken Radiance",
+     "entries": [
+      "幽影释放一道堕落的圣光，覆盖30尺半径。范围内每个生物必须通过一次{@dc 19}的体质豁免，失败受到{@damage 8d8}（平均36）的黯蚀伤害，成功则伤害减半。该黯蚀伤害对天族和圣武士额外造成{@damage 3d6}（平均10）伤害。"
+     ]
+    }
+   ]
   }
  ]
 }

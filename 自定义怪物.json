@@ -3135,6 +3135,522 @@
      ]
     }
    ]
+  },
+  {
+   "name": "塞蕾娜",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "人类"
+    ]
+   },
+   "alignment": [
+    "中立善良"
+   ],
+   "ac": [
+    10
+   ],
+   "hp": {
+    "average": 9,
+    "formula": "2d8"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 10,
+   "dex": 10,
+   "con": 10,
+   "int": 10,
+   "wis": 14,
+   "cha": 11,
+   "skill": {
+    "medicine": "+4",
+    "religion": "+2"
+   },
+   "passive": 12,
+   "languages": [
+    "任意一门语言（通常是通用语）"
+   ],
+   "cr": "1/4",
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "侍僧作为1级施法者，其施法关键属性为感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。侍僧准备了以下牧师法术："
+     ],
+     "spells": {
+      "0": {
+       "spells": [
+        "{@spell 光亮术}",
+        "{@spell 圣火术}",
+        "{@spell 奇术}"
+       ]
+      },
+      "1": {
+       "slots": 3,
+       "spells": [
+        "{@spell 祝福术}",
+        "{@spell 疗伤术}",
+        "{@spell 庇护术}"
+       ]
+      }
+     },
+     "ability": "wis"
+    }
+   ],
+   "action": [
+    {
+     "name": "短棍 Club",
+     "ENG_name": "Club",
+     "entries": [
+      "{@atkr m} {@hit 2}，触及5尺，单一目标。{@h}伤害：{@damage 1d4}（平均2）钝击伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "威娜",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "人类"
+    ]
+   },
+   "alignment": [
+    "中立善良"
+   ],
+   "ac": [
+    10
+   ],
+   "hp": {
+    "average": 27,
+    "formula": "5d8 + 5"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 10,
+   "dex": 10,
+   "con": 12,
+   "int": 13,
+   "wis": 16,
+   "cha": 13,
+   "skill": {
+    "medicine": "+7",
+    "persuasion": "+3",
+    "religion": "+4"
+   },
+   "passive": 13,
+   "languages": [
+    "通用语",
+    "天界语"
+   ],
+   "cr": "0",
+   "trait": [
+    {
+     "name": "心灵破损 Broken Mind",
+     "ENG_name": "Broken Mind",
+     "entries": [
+      "威娜免疫困惑术以及类似法术。在她的每个回合开始时投掷一次{@dice 1d10}以确定她的行动：",
+      {
+       "type": "table",
+       "caption": "心灵破损（每回合开始掷 1d10）",
+       "colLabels": [
+        "d10",
+        "行动"
+       ],
+       "colStyles": [
+        "col-2 text-center",
+        "col-10"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "威娜开始尖叫或者哭泣，对距离她最近的一个生物恐惧，并尽可能地逃离该生物。"
+        ],
+        [
+         "4-5",
+         "威娜将所有生物都视为敌人，对触及范围内的随机一个目标进行一次攻击。如果没有其他生物在其触及范围内，她会原地采取回避动作。"
+        ],
+        [
+         "6-7",
+         "威娜的眼睛变得呆滞，并且她陷入{@condition 震慑}状态，直到她的下个回合开始。"
+        ],
+        [
+         "8-10",
+         "威娜喃喃自语，说出无法理解的破碎词句。"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "巴莱特",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": {
+    "type": "humanoid",
+    "tags": [
+     "人类"
+    ]
+   },
+   "alignment": [
+    "守序邪恶"
+   ],
+   "ac": [
+    {
+     "ac": 15,
+     "from": [
+      "法师护甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 66,
+    "formula": "12d8 + 12"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 9,
+   "dex": 14,
+   "con": 12,
+   "int": 17,
+   "wis": 12,
+   "cha": 11,
+   "save": {
+    "int": "+7",
+    "wis": "+5"
+   },
+   "skill": {
+    "arcana": "+7",
+    "history": "+7"
+   },
+   "resist": [
+    "necrotic"
+   ],
+   "passive": 11,
+   "languages": [
+    "任意四种语言"
+   ],
+   "cr": "9",
+   "trait": [
+    {
+     "name": "惧怖收割 Grim Harvest（1/回合）",
+     "ENG_name": "Grim Harvest",
+     "entries": [
+      "死灵师在以一个环阶不低于1环的法术杀死一个非构装非不死生物时，恢复等于该法术环阶两倍的生命值。如果该法术是死灵系法术，则恢复的生命值为法术环阶的三倍。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "死灵师作为12级施法者，其关键属性为智力（法术豁免{@dc 15}，法术攻击命中{@hit 7}）。他准备了以下法师法术："
+     ],
+     "spells": {
+      "0": {
+       "spells": [
+        "{@spell 冻寒之触}",
+        "{@spell 舞光术}",
+        "{@spell 法师之手}",
+        "{@spell 修复术}"
+       ]
+      },
+      "1": {
+       "slots": 4,
+       "spells": [
+        "{@spell 魅惑人类}",
+        "{@spell 法师护甲}",
+        "{@spell 致病射线}"
+       ]
+      },
+      "2": {
+       "slots": 3,
+       "spells": [
+        "{@spell 暗示术}",
+        "{@spell 衰弱射线}",
+        "{@spell 蛛网术}"
+       ]
+      },
+      "3": {
+       "slots": 3,
+       "spells": [
+        "{@spell 操纵死尸}",
+        "{@spell 火球术}",
+        "{@spell 吸血鬼之触}"
+       ]
+      },
+      "4": {
+       "slots": 3,
+       "spells": [
+        "{@spell 枯萎术}",
+        "{@spell 任意门}",
+        "{@spell 石肤术}"
+       ]
+      },
+      "5": {
+       "slots": 2,
+       "spells": [
+        "{@spell 突触静滞}",
+        "{@spell 指使术}",
+        "{@spell 力场墙}"
+       ]
+      },
+      "6": {
+       "slots": 1,
+       "spells": [
+        "{@spell 灵魂牢笼}",
+        "{@spell 解离术}"
+       ]
+      }
+     },
+     "footerEntries": [
+      "带 * 号的为环阶不低于 1 环的死灵系法术。"
+     ],
+     "ability": "int"
+    }
+   ],
+   "action": [
+    {
+     "name": "枯萎之触 Withering Touch",
+     "ENG_name": "Withering Touch",
+     "entries": [
+      "{@atkr ms} {@hit 7}，触及5尺，单一目标。{@h}伤害：{@damage 2d4}（平均5）黯蚀伤害。"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "次等巫妖巴莱特",
+   "ENG_name": "",
+   "source": "HOMEBREW",
+   "page": 0,
+   "size": [
+    "M"
+   ],
+   "type": "undead",
+   "alignment": [
+    "任意邪恶阵营"
+   ],
+   "ac": [
+    {
+     "ac": 15,
+     "from": [
+      "天生护甲"
+     ]
+    }
+   ],
+   "hp": {
+    "average": 120,
+    "formula": "16d8 + 48"
+   },
+   "speed": {
+    "walk": 30
+   },
+   "str": 11,
+   "dex": 12,
+   "con": 16,
+   "int": 19,
+   "wis": 17,
+   "cha": 17,
+   "save": {
+    "con": "+7",
+    "int": "+8",
+    "wis": "+7",
+    "cha": "+7"
+   },
+   "skill": {
+    "arcana": "+8",
+    "deception": "+7",
+    "history": "+8",
+    "insight": "+7",
+    "perception": "+7",
+    "stealth": "+5"
+   },
+   "resist": [
+    "cold",
+    "lightning",
+    "necrotic"
+   ],
+   "immune": [
+    "poison",
+    {
+     "immune": [
+      "bludgeoning",
+      "piercing",
+      "slashing"
+     ],
+     "note": "（来自非魔法攻击）"
+    }
+   ],
+   "conditionImmune": [
+    "charmed",
+    "exhaustion",
+    "frightened",
+    "paralyzed",
+    "poisoned"
+   ],
+   "senses": [
+    "真实视觉120尺"
+   ],
+   "passive": 17,
+   "languages": [
+    "深潜语",
+    "地底通用语",
+    "心灵感应120尺"
+   ],
+   "cr": "10",
+   "trait": [
+    {
+     "name": "复生 Rejuvenation",
+     "ENG_name": "Rejuvenation",
+     "entries": [
+      "只要保有命匣，被摧毁的巫妖就可以在{@dice 1d10}天内获得一具新的躯体，恢复所有生命值，并再次活动。这具新的躯体将出现在命匣5尺内。"
+     ]
+    },
+    {
+     "name": "魔法抗性 Magic Resistance",
+     "ENG_name": "Magic Resistance",
+     "entries": [
+      "巫妖抵抗法术和其他魔法效应所作的豁免检定具有优势。"
+     ]
+    },
+    {
+     "name": "抵抗驱散 Turn Resistance",
+     "ENG_name": "Turn Resistance",
+     "entries": [
+      "巫妖抵抗驱散不死生物效应所做的豁免检定具有优势。"
+     ]
+    }
+   ],
+   "spellcasting": [
+    {
+     "name": "施法 Spellcasting",
+     "ENG_name": "Spellcasting",
+     "type": "spellcasting",
+     "headerEntries": [
+      "巫妖作为12级施法者，其施法关键属性是智力（法术豁免{@dc 16}，法术攻击命中{@hit 8}）。巫妖准备了以下法师法术："
+     ],
+     "spells": {
+      "0": {
+       "spells": [
+        "{@spell 冻寒之触}",
+        "{@spell 舞光术}",
+        "{@spell 法师之手}",
+        "{@spell 修复术}"
+       ]
+      },
+      "1": {
+       "slots": 4,
+       "spells": [
+        "{@spell 魅惑人类}",
+        "{@spell 法师护甲}",
+        "{@spell 致病射线}"
+       ]
+      },
+      "2": {
+       "slots": 3,
+       "spells": [
+        "{@spell 暗示术}",
+        "{@spell 衰弱射线}",
+        "{@spell 蛛网术}"
+       ]
+      },
+      "3": {
+       "slots": 3,
+       "spells": [
+        "{@spell 操纵死尸}",
+        "{@spell 火球术}",
+        "{@spell 吸血鬼之触}"
+       ]
+      },
+      "4": {
+       "slots": 3,
+       "spells": [
+        "{@spell 枯萎术}",
+        "{@spell 任意门}",
+        "{@spell 石肤术}"
+       ]
+      },
+      "5": {
+       "slots": 2,
+       "spells": [
+        "{@spell 突触静滞}",
+        "{@spell 指使术}",
+        "{@spell 力场墙}"
+       ]
+      },
+      "6": {
+       "slots": 1,
+       "spells": [
+        "{@spell 灵魂牢笼}",
+        "{@spell 解离术}"
+       ]
+      }
+     },
+     "ability": "int"
+    }
+   ],
+   "action": [
+    {
+     "name": "冻寒之爪 Chilling Grasp",
+     "ENG_name": "Chilling Grasp",
+     "entries": [
+      "{@atkr ms} {@hit 8}，触及5尺，单一生物。{@h}伤害：{@damage 3d6}（平均10）点冷冻伤害。"
+     ]
+    }
+   ],
+   "legendaryHeader": [
+    "巫妖可进行3个传奇动作，从下列动作选项中选择。每次只能用一项传奇动作选项，且只能在另一个生物的行动轮结束时使用。在自己的行动轮开始时，巫妖重获所有已用的传奇动作次数。"
+   ],
+   "legendaryActions": 3,
+   "legendary": [
+    {
+     "name": "戏法 Cantrip",
+     "ENG_name": "Cantrip",
+     "entries": [
+      "巫妖施展一个戏法。"
+     ]
+    },
+    {
+     "name": "冻寒之爪 Chilling Grasp",
+     "ENG_name": "Chilling Grasp",
+     "entries": [
+      "巫妖使用冻寒之爪。"
+     ]
+    },
+    {
+     "name": "恐惧凝视 Frightening Gaze（2动作）",
+     "ENG_name": "Frightening Gaze",
+     "entries": [
+      "巫妖凝视一个视线内距离其不超过10尺的生物。目标必须成功通过一个{@dc 16}的感知豁免检定，否则将{@condition 恐慌}一分钟。恐慌的生物在其每个行动轮结束时可以再次检定豁免，若豁免成功则效果结束。如果目标生物在豁免中成功，或效果自然结束，那么目标生物在接下来的24小时内对这个巫妖的恐惧凝视免疫。"
+     ]
+    }
+   ]
   }
  ]
 }
